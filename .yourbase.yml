@@ -1,0 +1,13 @@
+#have docs that explicitly say latest supported. 
+
+dependencies:
+  build:
+    - maven:3.6.1  # Tried to run yb build was instructed to install oraclejdk. After some debugging, installed adoptopenjdk and things worked locally
+
+build_targets:
+  - name: default
+    commands:
+      - mvn compile
+      - mvn package
+      - mvn install
+      - mvn test
