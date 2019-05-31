@@ -11,3 +11,8 @@ build_targets:
       - mvn package
       - mvn install
       - mvn test
+
+ci:
+  builds:
+    - name: maven-demo
+      build_target: default
