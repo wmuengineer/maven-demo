@@ -2,6 +2,7 @@
 
 dependencies:
   build:
+    - brew install adoptopenjdk
     - maven:3.6.1  # Tried to run yb build was instructed to install oraclejdk. After some debugging, installed adoptopenjdk and things worked locally
 
 build_targets:
