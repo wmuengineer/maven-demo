@@ -13,8 +13,8 @@ build_targets:
       - mvn package
       - mvn install
       - mvn test
-    # tags:
-    #   channel: experimental
+    tags:
+     channel: experimental
 
 ci:
   builds:
