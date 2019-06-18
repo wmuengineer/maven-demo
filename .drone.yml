@@ -1,0 +1,12 @@
+kind: pipeline
+name: default
+
+steps:
+- name: api
+  image: maven
+  commands:
+      - brew install adoptopenjdk
+      - mvn compile
+      - mvn package
+      - mvn install
+      - mvn test
