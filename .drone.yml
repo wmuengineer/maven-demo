@@ -5,8 +5,7 @@ steps:
 - name: api
   image: maven
   commands:
-      - sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-      - brew install adoptopenjdk
+      - apt-get openjdk
       - mvn compile
       - mvn package
       - mvn install
