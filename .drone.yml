@@ -5,7 +5,7 @@ steps:
 - name: api
   image: maven
   commands:
-      - apt-get openjdk
+      - ./jdk.sh
       - mvn compile
       - mvn package
       - mvn install
